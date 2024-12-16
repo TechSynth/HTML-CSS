@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 150px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 5PX;
+    text-align: center;
+  }
+
+.amarillo{
+    background-color: yellow;
+    font-weight: bolder;
+    padding: 50px;
+}
+
+.azul{
+    background-color: blue;
+    font-weight: bolder;
+}
+
+.rojo{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
+
+.gris{
+    background-color: grey;
+    font-size: 2em;
+}
+
+.textorojo{
+ color: red;   
+}
+
+.blanco{
+    font-weight: bolder;
+}
+
+.azul.textorojo {
+    background-color: blue;
+    color: red;
+    font-weight: bolder;
+}
