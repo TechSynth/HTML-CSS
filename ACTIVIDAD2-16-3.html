@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formalta
+    </title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <h1>Complete los siguientes campos para realizar el alta en nuestra web</h1>
+    <form>
+    
+        <fieldset style="background-color: #d59825;">
+        <legend><b>Datos personales</b></legend>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre</label></td>
+                <td><input type="text" id="nombre" ></td>
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><input type="text" id="apellidos" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="cumple">Fecha de nacimiento</label></td>
+                <td><input type="date" id="cumple"></td>
+                <td><label for="mail">Correo</label></td>
+                <td><input type="email" id="mail" size="25"></td>
+            </tr>
+            <tr>
+                <td><label for="DNI">NIF</label></td>
+                <td><input type="text" id="DNI" size="10" minlength="9" maxlength="9"></td>
+                <td><label for="tlf">Teléfono</label></td>
+                <td><input type="number" id="tlf"></td>
+            </tr>
+            <tr>
+                <td><label for="user">Usuario</label></td>
+                <td><input type="text" id="user" size="10"></td>
+                <td><label for="passwd">Contraseña</label></td>
+                <td><input type="password" id="passwd" size="10" minlength="5" maxlength="10"></td>
+            </tr>
+        </td>
+    </tr>
+    </table>
+                <br>
+            <label>Sexo</label> 
+            <input type="radio" name="sexo" id="fem" value="fem"> Mujer
+            <input type="radio" name="sexo" id="masc" value="masc"> Hombre
+                <br><br>
+            <label for="provincias">Provincia de nacimiento</label>
+                <select required name="provincia">
+            <option value="">Elige Provincia</option>
+            <option value="Álava/Araba">Álava/Araba</option>
+            <option value="Albacete">Albacete</option>
+            <option value="Alicante">Alicante</option>
+            <option value="Almería">Almería</option>
+            <option value="Asturias">Asturias</option>
+            <option value="Ávila">Ávila</option>
+            <option value="Badajoz">Badajoz</option>
+            <option value="Baleares">Baleares</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Burgos">Burgos</option>
+            <option value="Cáceres">Cáceres</option>
+            <option value="Cádiz">Cádiz</option>
+            <option value="Cantabria">Cantabria</option>
+            <option value="Castellón">Castellón</option>
+            <option value="Ceuta">Ceuta</option>
+            <option value="Ciudad Real">Ciudad Real</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Cuenca">Cuenca</option>
+            <option value="Gerona/Girona">Gerona/Girona</option>
+            <option value="Granada">Granada</option>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+            <option value="Huelva">Huelva</option>
+            <option value="Huesca">Huesca</option>
+            <option value="Jaén">Jaén</option>
+            <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Las Palmas">Las Palmas</option>
+            <option value="León">León</option>
+            <option value="Lérida/Lleida">Lérida/Lleida</option>
+            <option value="Lugo">Lugo</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Málaga">Málaga</option>
+            <option value="Melilla">Melilla</option>
+            <option value="Murcia">Murcia</option>
+            <option value="Navarra">Navarra</option>
+            <option value="Orense/Ourense">Orense/Ourense</option>
+            <option value="Palencia">Palencia</option>
+            <option value="Pontevedra">Pontevedra</option>
+            <option value="Salamanca">Salamanca</option>
+            <option value="Segovia">Segovia</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Soria">Soria</option>
+            <option value="Tarragona">Tarragona</option>
+            <option value="Tenerife">Tenerife</option>
+            <option value="Teruel">Teruel</option>
+            <option value="Toledo">Toledo</option>
+            <option value="Valencia">Valencia</option>
+            <option value="Valladolid">Valladolid</option>
+            <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+            <option value="Zamora">Zamora</option>
+            <option value="Zaragoza">Zaragoza</option>
+                </select>
+  </fieldset> 
+        <!--Segunda parte-->
+        <br>
+        <fieldset style="background-color: #d46c23">
+            <legend><b>Datos adicionales</b></legend>
+            <br>
+            <label for="numDispositivosElectronicos">Dispositivos electrónicos disponibles en el hogar</label>
+            <br><input type="checkbox" id="numDispositivosElectronicos" name="PC"> PC
+            <br><input type="checkbox" id="numDispositivosElectronicos" name="Tableta"> Tableta
+            <br><input type="checkbox" id="numDispositivosElectronicos" name="Movil"> Móvil
+            <br>
+            <label for="estudios"> Estudios completados</label>
+            <input list="listaEstudios" id="estudios">
+            <datalist id="listaEstudios">
+                    <option value="Sin estudios">
+                    <option value="Primaria incompleta">
+                    <option value="Primaria completa">
+                    <option value="ESO o similar incompleta">
+                    <option value="ESO o similar completa">
+                    <option value="Bachillerato incompleto">
+                    <option value="Bachillerato completo">
+                    <option value="FP Básica">
+                    <option value="FP de Grado Medio">
+                    <option value="FP de Grado Superior">
+                    <option value="Grado universitario o similar incompleta">
+                    <option value="Grado universitario o similar">
+                    <option value="Máster">
+                    <option value="Doctorado">
+            </datalist>
+            <br>
+            <label for="barra"> Nivel de inglés de 1 a 10</label>
+            <input type="range" id="barra" min="1" max="10">
+
+            <br>
+
+            <label for="editor">Editor de html favorito</label>
+            <input list="listaEditores" id="editor">
+            <datalist id="listaEditores">
+                <option value="VS Code">
+                <option value="Bloc de notas">
+                <option value="Notepad++">
+                <option value="Sublime Text">
+                <option value="NetBeans IDE">
+            </datalist>
+
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+        
+        <p>Vuelve a la pagina inicial <a href="ACTIVIDAD2-16-1.html" style="color:blue" target="_self">aquí</a></p>
+    </form>
+</body>
+</html>
